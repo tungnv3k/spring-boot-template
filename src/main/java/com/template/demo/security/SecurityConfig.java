@@ -23,6 +23,7 @@ public class SecurityConfig {
                     auth.anyRequest().authenticated();
                 })
                 .formLogin(withDefaults())
+                .oauth2Login(withDefaults())
                 .logout(withDefaults())
                 .build();
     }
